@@ -13,8 +13,12 @@ dependencies:
   flutter_native_splash: ^2.4.6
   smooth_page_indicator: ^1.2.1
   lottie: ^3.3.1
+  get: ^4.7.2
+  get_storage: ^2.1.1
 
-
+  url_launcher: ^6.3.2
+  iconsax: ^0.0.8
+  intl: ^0.20.2
 
 upertino_icons: ^1.0.8
 
