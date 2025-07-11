@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
 
   flutter_native_splash: ^2.4.6
+  smooth_page_indicator: ^1.2.1
+  lottie: ^3.3.1
 
 
 
