@@ -1,7 +1,5 @@
 
 
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopping_store/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
