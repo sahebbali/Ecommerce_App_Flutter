@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopping_store/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
@@ -10,7 +8,6 @@ import 'package:shopping_store/utils/constants/image_strings.dart';
 import 'package:shopping_store/utils/constants/text_strings.dart';
 
 import '../../controllers/onboarding/onboarding_controller.dart';
-
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -26,9 +23,21 @@ class OnBoardingScreen extends StatelessWidget {
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,
             children: const [
-              OnBoardingPage(image: HkImages.onBoardingImage1, title: HkTexts.onBoardingTitle1,subtitle: HkTexts.onBoardingSubTitle1,),
-              OnBoardingPage(image: HkImages.onBoardingImage2, title: HkTexts.onBoardingTitle2,subtitle: HkTexts.onBoardingSubTitle2,),
-              OnBoardingPage(image: HkImages.onBoardingImage3, title: HkTexts.onBoardingTitle3,subtitle: HkTexts.onBoardingSubTitle3,),
+              OnBoardingPage(
+                image: HkImages.onBoardingImage1,
+                title: HkTexts.onBoardingTitle1,
+                subtitle: HkTexts.onBoardingSubTitle1,
+              ),
+              OnBoardingPage(
+                image: HkImages.onBoardingImage2,
+                title: HkTexts.onBoardingTitle2,
+                subtitle: HkTexts.onBoardingSubTitle2,
+              ),
+              OnBoardingPage(
+                image: HkImages.onBoardingImage3,
+                title: HkTexts.onBoardingTitle3,
+                subtitle: HkTexts.onBoardingSubTitle3,
+              ),
             ],
           ),
 
@@ -39,18 +48,9 @@ class OnBoardingScreen extends StatelessWidget {
           const OnBoardingDotNavigation(),
 
           /// Circular Button
-          const OnBoardingNextButton()
-
-        ]
-      )
+          const OnboardingNextButton(),
+        ],
+      ),
     );
   }
 }
-
-
-
-
-
-
-
-
