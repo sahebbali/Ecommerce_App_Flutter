@@ -1,61 +1,42 @@
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
+import 'package:shopping_store/features/authentication/screens/login/widgets/login_form.dart';
+import 'package:shopping_store/features/authentication/screens/login/widgets/login_header.dart';
+import 'package:shopping_store/utils/constants/sizes.dart';
+import 'package:shopping_store/utils/constants/text_strings.dart';
+import '../../../../common/styles/spacing_styles.dart';
+import '../../../../common/widgets/login_signup/form_divider.dart';
+import '../../../../common/widgets/login_signup/social_buttons.dart';
 
-import '../../../../../common/widgets/button/elevated_button.dart';
-import '../../../../../navigation_menu.dart';
-import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/constants/text_strings.dart';
-import '../../forget_password/forget_password.dart';
-import '../../signup/signup.dart';
-
-class ULoginForm extends StatelessWidget {
-  const ULoginForm({
-    super.key,
-  });
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        /// Email
-        TextFormField(
-          decoration: InputDecoration(prefixIcon: Icon(Iconsax.direct_right), labelText: UTexts.email),
-        ),
-        SizedBox(height: USizes.spaceBtwInputFields),
+    return  Scaffold(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: HkSpacingStyle.paddingWithAppBarHeight,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              /// Logo , Title And Subtitle
+              const HkLoginHeader(),
 
-        /// Password
-        TextFormField(
-          decoration: InputDecoration(
-              prefixIcon: Icon(Iconsax.password_check), labelText: UTexts.password, suffixIcon: Icon(Iconsax.eye)),
-        ),
-        SizedBox(height: USizes.spaceBtwInputFields / 2),
+              /// Form
+              const HkLoginForm(),
 
-        /// Remember Me & Forget Password
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            /// Remember Me
-            Row(
-              children: [Checkbox(value: true, onChanged: (value) {}), Text(UTexts.rememberMe)],
-            ),
+              /// Divider
+              HkFormDivider(dividerText: HkTexts.orSignInWith.capitalize!),
+              const SizedBox(height: HkSizes.spaceBtwSections,),
 
-            /// ForgetPassword
-            TextButton(onPressed: () => Get.to(() => ForgetPasswordScreen()), child: Text(UTexts.forgetPassword))
-          ],
-        ),
-        SizedBox(height: USizes.spaceBtwSections),
-
-        /// Sign In
-        UElevatedButton(onPressed: () => Get.to(() => NavigationMenu()), child: Text(UTexts.signIn)),
-        SizedBox(height: USizes.spaceBtwItems / 2),
-
-        /// Create Account
-        SizedBox(
-            width: double.infinity,
-            child: OutlinedButton(onPressed: () => Get.to(() => SignupScreen()), child: Text(UTexts.createAccount))),
-      ],
+              /// Footer
+              const HkSocialButtons()
+            ],
+          )
+        )
+      )
     );
   }
 }
