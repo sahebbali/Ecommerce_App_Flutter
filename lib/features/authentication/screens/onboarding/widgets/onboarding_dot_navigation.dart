@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopping_store/features/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:shopping_store/utils/constants/sizes.dart';
+// import 'package:shopping_store/utils/constants/sizes.dart';
 import 'package:shopping_store/utils/helpers/helper_functions.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
