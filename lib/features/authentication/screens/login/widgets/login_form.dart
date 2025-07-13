@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_store/features/authentication/controllers/login/login_controller.dart';
 import 'package:shopping_store/features/authentication/screens/password_configuration/forget_passwrod.dart';
-import 'package:shopping_store/navigation_menu.dart';
 import 'package:shopping_store/utils/validators/validation.dart';
 
 import '../../../../../utils/constants/sizes.dart';
