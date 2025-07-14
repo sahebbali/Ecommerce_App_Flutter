@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "872998617865",
+    "project_id": "extreme-zephyr-395310",
+    "storage_bucket": "extreme-zephyr-395310.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872998617865:android:c71199c37b33fdab75c9d8",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872998617865-peilaor4b09h56l84r1bd54r3719082m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwNColMLx4lxL2mm1gXF-fexoyhmgEOV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872998617865-peilaor4b09h56l84r1bd54r3719082m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "872998617865-2auforrpg2e204oupls3p3feoq6dfggh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
