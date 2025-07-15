@@ -4,7 +4,7 @@ import 'package:shopping_store/utils/helpers/helper_functions.dart';
 import '../../../features/shop/models/brand_model.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/enums.dart';
-import '../../../utils/constants/image_strings.dart';
+// import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
 import '../custom_shapes/containers/rounded_container.dart';
 import '../images/circular_image.dart';
