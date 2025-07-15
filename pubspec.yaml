@@ -22,7 +22,7 @@ dependencies:
   image_picker: ^1.1.2
   cached_network_image: ^3.4.1
   flutter_rating_bar: ^4.0.1
- 
+  shimmer: ^3.0.0
 
   # Firebase Packages
   firebase_auth: ^5.6.2
