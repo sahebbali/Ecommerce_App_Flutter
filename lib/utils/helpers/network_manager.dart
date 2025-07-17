@@ -19,13 +19,17 @@ class NetworkManager extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    _connectivitySubscription = _connectivity.onConnectivityChanged.listen(_updateConnectionStatus);
+    _connectivitySubscription = _connectivity.onConnectivityChanged.listen(
+      _updateConnectionStatus,
+    );
   }
 
   /// Update the connection status based on changes in connectivity and show a relevant popup for no internet connection.
   Future<void> _updateConnectionStatus(List<ConnectivityResult> results) async {
     // You can decide what logic to apply if multiple results exist.
-    final firstResult = results.isNotEmpty ? results.first : ConnectivityResult.none;
+    final firstResult = results.isNotEmpty
+        ? results.first
+        : ConnectivityResult.none;
     _connectionStatus.value = firstResult;
 
     if (_connectionStatus.value == ConnectivityResult.none) {
@@ -38,7 +42,12 @@ class NetworkManager extends GetxController {
   Future<bool> isConnected() async {
     try {
       final result = await _connectivity.checkConnectivity();
-      return result != ConnectivityResult.none;
+      // Check if the list contains any connectivity result that's not none
+      return result.isNotEmpty &&
+          result.any((r) => r != ConnectivityResult.none);
+
+      // OR if you just want to check if there's any connection (regardless of type)
+      // return result.isNotEmpty && result.first != ConnectivityResult.none;
     } on PlatformException {
       return false;
     }

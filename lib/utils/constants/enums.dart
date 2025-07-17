@@ -5,8 +5,8 @@
 -- */
 
 
-/// Switch of Custom Brand-Text-Size Widget
-///
+// Switch of Custom Brand-Text-Size Widget
+//
 
 
 enum ProductType {single, variable}

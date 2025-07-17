@@ -34,7 +34,8 @@ class OrderController extends GetxController{
 
       return userOrders;
     }catch(e){
-      print(e);
+      // print(e);
+       debugPrint('Error fetching user orders: $e');
       HkHelperFunctions.warningSnackBar(title: 'Oh Snap!', message: e.toString());
       return [];
     }
