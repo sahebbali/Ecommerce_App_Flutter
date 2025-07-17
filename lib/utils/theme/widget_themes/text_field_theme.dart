@@ -13,7 +13,7 @@ class HkTextFormFieldTheme {
     labelStyle: const TextStyle().copyWith(fontSize: HkSizes.fontSizeMd, color: HkColors.black),
     hintStyle: const TextStyle().copyWith(fontSize: HkSizes.fontSizeSm, color: HkColors.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle: const TextStyle().copyWith(color: HkColors.black.withOpacity(0.8)),
+    floatingLabelStyle: const TextStyle().copyWith(color: HkColors.black.withAlpha(204)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(HkSizes.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: HkColors.grey),
@@ -43,7 +43,7 @@ class HkTextFormFieldTheme {
     // constraints: const BoxConstraints.expand(height: TSizes.inputFieldHeight),
     labelStyle: const TextStyle().copyWith(fontSize: HkSizes.fontSizeMd, color: HkColors.white),
     hintStyle: const TextStyle().copyWith(fontSize: HkSizes.fontSizeSm, color: HkColors.white),
-    floatingLabelStyle: const TextStyle().copyWith(color: HkColors.white.withOpacity(0.8)),
+    floatingLabelStyle: const TextStyle().copyWith(color: HkColors.white.withAlpha(204)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(HkSizes.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: HkColors.darkGrey),
