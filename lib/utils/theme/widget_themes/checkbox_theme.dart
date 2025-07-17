@@ -2,45 +2,45 @@ import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 import '../../constants/sizes.dart';
 
-/// Custom Class for Light & Dark Text Themes
+/// Custom Class for Light & Dark Checkbox Themes
 class HkCheckboxTheme {
-  HkCheckboxTheme._(); // To avoid creating instances
+  HkCheckboxTheme._(); // Prevent instantiation
 
-  /// Customizable Light Text Theme
+  /// Customizable Light Theme
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(HkSizes.xs)),
-    checkColor: MaterialStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.selected)) {
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(HkSizes.xs),
+    ),
+    checkColor: WidgetStateProperty.resolveWith((states) {
+      if (states.contains(WidgetState.selected)) {
         return HkColors.white;
-      } else {
-        return HkColors.black;
       }
+      return HkColors.black;
     }),
-    fillColor: MaterialStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.selected)) {
+    fillColor: WidgetStateProperty.resolveWith((states) {
+      if (states.contains(WidgetState.selected)) {
         return HkColors.primary;
-      } else {
-        return Colors.transparent;
       }
+      return Colors.transparent;
     }),
   );
 
-  /// Customizable Dark Text Theme
+  /// Customizable Dark Theme
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(HkSizes.xs)),
-    checkColor: MaterialStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.selected)) {
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(HkSizes.xs),
+    ),
+    checkColor: WidgetStateProperty.resolveWith((states) {
+      if (states.contains(WidgetState.selected)) {
         return HkColors.white;
-      } else {
-        return HkColors.black;
       }
+      return HkColors.black;
     }),
-    fillColor: MaterialStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.selected)) {
+    fillColor: WidgetStateProperty.resolveWith((states) {
+      if (states.contains(WidgetState.selected)) {
         return HkColors.primary;
-      } else {
-        return Colors.transparent;
       }
+      return Colors.transparent;
     }),
   );
 }

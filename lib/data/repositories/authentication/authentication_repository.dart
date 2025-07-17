@@ -1,12 +1,12 @@
 
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
+// import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:google_sign_in/google_sign_in.dart';
+// import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shopping_store/data/repositories/user/user_repository.dart';
 import 'package:shopping_store/features/authentication/screens/login/login.dart';
 import 'package:shopping_store/features/authentication/screens/onboarding/onboarding.dart';
@@ -204,7 +204,7 @@ class AuthenticationRepository extends GetxController{
   /// [Logout User] - Valid for any authentication
   Future<void> logout() async{
     try{
-      await GoogleSignIn().signOut();
+      // await GoogleSignIn().signOut();
       await FirebaseAuth.instance.signOut();
       Get.offAll(()=> const LoginScreen());
     } on FirebaseAuthException catch(e){

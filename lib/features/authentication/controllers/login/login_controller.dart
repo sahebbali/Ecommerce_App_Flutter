@@ -1,7 +1,4 @@
 
-
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -89,7 +86,7 @@ class LoginController extends GetxController{
       }
 
       // Google Authentication
-      // final userCredentials = await AuthenticationRepository.instance.signInWithGoogle();
+      final userCredentials = await AuthenticationRepository.instance.signInWithGoogle();
 
       // Save user Record
       userController.saveUserRecord(userCredentials);

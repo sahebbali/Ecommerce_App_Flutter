@@ -1,6 +1,4 @@
 
-
-
 import 'package:flutter/cupertino.dart';
 
 import '../../../../utils/constants/colors.dart';
@@ -22,8 +20,8 @@ class HkPrimaryHeaderContainer extends StatelessWidget {
         child: Stack(
           children: [
             /// Background Custom Shapes
-            Positioned(top: -150, right: -250, child: HkCircularContainer(backgroundColor: HkColors.textWhite.withOpacity(0.1),)),
-            Positioned(top: 100, right: -300,child: HkCircularContainer(backgroundColor: HkColors.textWhite.withOpacity(0.1),)),
+            Positioned(top: -150, right: -250, child: HkCircularContainer(backgroundColor: HkColors.textWhite.withAlpha(25),)),
+            Positioned(top: 100, right: -300,child: HkCircularContainer(backgroundColor: HkColors.textWhite.withAlpha(25),)),
             child
           ],
         ),
