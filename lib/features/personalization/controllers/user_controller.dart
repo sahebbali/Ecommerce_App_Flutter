@@ -117,7 +117,7 @@ class UserController extends GetxController{
       if(provider.isNotEmpty){
         // Re verify Auth Email
         if(provider == 'google.com'){
-           await auth.signInWithGoogle();
+          //  await auth.signInWithGoogle();
            await auth.deleteAccount();
            HkFullScreenLoader.stopLoading();
            Get.offAll(() => const LoginScreen());

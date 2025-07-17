@@ -165,35 +165,35 @@ class AuthenticationRepository extends GetxController{
   /*---------- Federated identity & social Sign-in --------------------------------*/
 
   /// [GoogleAuthentication] - GOOGLE
-  Future<UserCredential?> signInWithGoogle() async{
-    try{
-      // Trigger the authentication flow
-      final GoogleSignInAccount? userAccount = await GoogleSignIn().signIn();
+  // Future<UserCredential?> signInWithGoogle() async{
+  //   try{
+  //     // Trigger the authentication flow
+  //     final GoogleSignInAccount? userAccount = await GoogleSignIn().signIn();
 
-      // Obtain the authentication details from the request
-      final GoogleSignInAuthentication? googleAuth = await userAccount?.authentication;
+  //     // Obtain the authentication details from the request
+  //     final GoogleSignInAuthentication? googleAuth = await userAccount?.authentication;
 
-      // Create a credential
-      final  OAuthCredential credential = GoogleAuthProvider.credential(
-          accessToken: googleAuth?.accessToken,
-          idToken: googleAuth?.idToken);
+  //     // Create a credential
+  //     final  OAuthCredential credential = GoogleAuthProvider.credential(
+  //         accessToken: googleAuth?.accessToken,
+  //         idToken: googleAuth?.idToken);
 
-      // Once the signed in, return the user credential
-      return await _auth.signInWithCredential(credential);
+  //     // Once the signed in, return the user credential
+  //     return await _auth.signInWithCredential(credential);
 
-    } on FirebaseAuthException catch(e){
-      throw HkFirebaseAuthException(e.code).message;
-    } on FirebaseException catch(e){
-      throw HkFirebaseException(e.code).message;
-    } on FormatException catch(_){
-      throw const HkFormatException();
-    } on PlatformException catch(e){
-      throw HkPlatformException(e.code).message;
-    } catch(e){
-      if(kDebugMode) print('Something went wrong: $e');
-      return null;
-    }
-  }
+  //   } on FirebaseAuthException catch(e){
+  //     throw HkFirebaseAuthException(e.code).message;
+  //   } on FirebaseException catch(e){
+  //     throw HkFirebaseException(e.code).message;
+  //   } on FormatException catch(_){
+  //     throw const HkFormatException();
+  //   } on PlatformException catch(e){
+  //     throw HkPlatformException(e.code).message;
+  //   } catch(e){
+  //     if(kDebugMode) print('Something went wrong: $e');
+  //     return null;
+  //   }
+  // }
 
 
   /// [FacebookAuthentication] - FACEBOOK
