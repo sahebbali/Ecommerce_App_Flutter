@@ -9,13 +9,13 @@ import 'package:shopping_store/common/widgets/shimmer/vertical_product_shimmer.d
 import 'package:shopping_store/common/widgets/texts/section_heading.dart';
 import 'package:shopping_store/features/shop/controllers/category_controller.dart';
 import 'package:shopping_store/features/shop/models/category_model.dart';
-import 'package:shopping_store/features/shop/models/product_model.dart';
+// import 'package:shopping_store/features/shop/models/product_model.dart';
 import 'package:shopping_store/features/shop/screens/all_products/all_products.dart';
 import 'package:shopping_store/features/shop/screens/store/widgets/category_brands.dart';
 import 'package:shopping_store/utils/helpers/cloud_helper_functions.dart';
 
-import '../../../../../common/widgets/brands/brand_show_case.dart';
-import '../../../../../utils/constants/image_strings.dart';
+// import '../../../../../common/widgets/brands/brand_show_case.dart';
+// import '../../../../../utils/constants/image_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
 
 class HkCategoryTab extends StatelessWidget {

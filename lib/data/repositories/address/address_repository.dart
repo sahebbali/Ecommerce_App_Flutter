@@ -24,8 +24,8 @@ class AddressRepository extends GetxController{
       return result;
 
     }catch(e){
-      print(e);
-      throw e;
+      // print(e);
+      // throw e;
     }
   }
 

@@ -6,7 +6,7 @@ import 'package:shopping_store/common/widgets/brands/brand_show_case.dart';
 import 'package:shopping_store/common/widgets/shimmer/boxes_shimmer.dart';
 import 'package:shopping_store/common/widgets/shimmer/list_tile_shimmer.dart';
 import 'package:shopping_store/features/shop/models/category_model.dart';
-import 'package:shopping_store/utils/constants/image_strings.dart';
+// import 'package:shopping_store/utils/constants/image_strings.dart';
 import 'package:shopping_store/utils/constants/sizes.dart';
 import 'package:shopping_store/utils/helpers/cloud_helper_functions.dart';
 

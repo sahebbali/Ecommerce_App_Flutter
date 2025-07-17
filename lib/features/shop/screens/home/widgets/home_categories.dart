@@ -5,7 +5,7 @@ import 'package:shopping_store/features/shop/controllers/category_controller.dar
 import 'package:shopping_store/features/shop/screens/sub_category/sub_categories.dart';
 
 import '../../../../../common/widgets/image_text/vertical_image_text.dart';
-import '../../../../../utils/constants/image_strings.dart';
+// import '../../../../../utils/constants/image_strings.dart';
 
 class HkHomeCategories extends StatelessWidget {
   const HkHomeCategories({

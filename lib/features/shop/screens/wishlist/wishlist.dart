@@ -13,7 +13,7 @@ import 'package:shopping_store/utils/constants/image_strings.dart';
 import 'package:shopping_store/utils/helpers/cloud_helper_functions.dart';
 
 import '../../../../utils/constants/sizes.dart';
-import '../../models/product_model.dart';
+// import '../../models/product_model.dart';
 import '../home/home.dart';
 
 class FavouriteScreen extends StatelessWidget {

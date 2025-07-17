@@ -14,26 +14,34 @@ class HkAppBar extends StatelessWidget implements PreferredSizeWidget {
   final List<Widget>? actions;
   final VoidCallback? leadingOnPressed;
 
-  const HkAppBar(
-      {super.key,
-        this.title,
-        this.showBackArrow = false,
-        this.leadingIcon,
-        this.actions,
-        this.leadingOnPressed});
+  const HkAppBar({
+    super.key,
+    this.title,
+    this.showBackArrow = false,
+    this.leadingIcon,
+    this.actions,
+    this.leadingOnPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
     final dark = HkHelperFunctions.isDarkMode(context);
 
-    return Padding(padding: const EdgeInsets.symmetric(horizontal: HkSizes.md),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: HkSizes.md),
       child: AppBar(
-          automaticallyImplyLeading: false,
-          leading: showBackArrow ? IconButton(
-            onPressed: () => Get.back(), icon: const Icon(Iconsax.arrow_left),color: dark ? HkColors.white : HkColors.dark ,) :
-            leadingIcon != null ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon)) : null,
+        automaticallyImplyLeading: false,
+        leading: showBackArrow
+            ? IconButton(
+                onPressed: () => Get.back(),
+                icon: const Icon(Iconsax.arrow_left),
+                color: dark ? HkColors.white : HkColors.dark,
+              )
+            : leadingIcon != null
+            ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon))
+            : null,
 
-          title:title ,
+        title: title,
 
         actions: actions,
       ),
@@ -41,6 +49,5 @@ class HkAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => Size.fromHeight(HkDeviceUtils.getAppBarHeight());
 }

@@ -1,15 +1,14 @@
-
-import 'package:shopping_store/utils/helpers/network_manager.dart';
+// import 'package:shopping_store/utils/helpers/network_manager.dart';
 
 class HkValidator {
   /// Empty Text Validation
-  static String? validateEmptyText(String? fieldName, String? value){
-    if(value == null || value.isEmpty){
+  static String? validateEmptyText(String? fieldName, String? value) {
+    if (value == null || value.isEmpty) {
       return '$fieldName is required';
     }
     return null;
-
   }
+
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
       return 'Email is required.';
@@ -68,5 +67,5 @@ class HkValidator {
     return null;
   }
 
-// Add more custom validators as needed for your specific requirements.
+  // Add more custom validators as needed for your specific requirements.
 }

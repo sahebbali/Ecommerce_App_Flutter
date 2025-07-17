@@ -1,19 +1,16 @@
-
-
-
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:iconsax/iconsax.dart';
+// import 'package:flutter/widgets.dart';
+// import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+// import 'package:iconsax/iconsax.dart';
 import 'package:shopping_store/common/widgets/appbar/appbar.dart';
 import 'package:shopping_store/features/shop/screens/product_reviews/widgets/overall_product_rating.dart';
-import 'package:shopping_store/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
+// import 'package:shopping_store/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
 import 'package:shopping_store/features/shop/screens/product_reviews/widgets/user_review_card.dart';
 import 'package:shopping_store/utils/constants/sizes.dart';
 
 import '../../../../common/widgets/products/ratings/product_rating_indicator.dart';
-import '../../../../utils/constants/colors.dart';
+// import '../../../../utils/constants/colors.dart';
 
 class ProductReviewsScreen extends StatelessWidget {
   const ProductReviewsScreen({super.key});

@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:shopping_store/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:shopping_store/common/widgets/texts/section_heading.dart';
 import 'package:shopping_store/utils/constants/colors.dart';
-import 'package:shopping_store/utils/constants/image_strings.dart';
+// import 'package:shopping_store/utils/constants/image_strings.dart';
 import 'package:shopping_store/utils/constants/sizes.dart';
 import 'package:shopping_store/utils/helpers/helper_functions.dart';
 
