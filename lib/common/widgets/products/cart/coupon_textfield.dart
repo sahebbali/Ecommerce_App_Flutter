@@ -41,9 +41,9 @@ class HkCouponCode extends StatelessWidget {
             width: 80,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  foregroundColor: dark ? HkColors.white.withOpacity(0.5) : HkColors.dark.withOpacity(0.5),
-                  backgroundColor: HkColors.grey.withOpacity(0.2),
-                  side: BorderSide(color: HkColors.grey.withOpacity(0.1))
+                  foregroundColor: dark ? HkColors.white.withAlpha(127) : HkColors.dark.withAlpha(127),
+                  backgroundColor: HkColors.grey.withAlpha(50),
+                  side: BorderSide(color: HkColors.grey.withAlpha(25))
               ),
               onPressed: (){},
               child: const Text('Apply'),

@@ -33,7 +33,7 @@ class HkProductMetaData extends StatelessWidget {
             if(salePercentage != null)
             HkRoundedContainer(
                 radius: HkSizes.sm,
-                backgroundColor: HkColors.secondary.withOpacity(0.8),
+                backgroundColor: HkColors.secondary.withAlpha(227),
                 padding: const EdgeInsets.symmetric(horizontal: HkSizes.sm, vertical: HkSizes.xs),
                 child: Text(
                   '$salePercentage%',

@@ -37,7 +37,7 @@ class HkSingleAddress extends StatelessWidget {
             padding: const EdgeInsets.all(HkSizes.md),
             width: double.infinity,
             showBorder: true,
-            backgroundColor: selectedAddress ? HkColors.primary.withOpacity(0.5) : Colors.transparent,
+            backgroundColor: selectedAddress ? HkColors.primary.withAlpha(127) : Colors.transparent,
             borderColor: selectedAddress ? Colors.transparent :
             dark ? HkColors.darkerGrey : HkColors.grey,
             margin: const EdgeInsets.only(bottom: HkSizes.spaceBtwItems),

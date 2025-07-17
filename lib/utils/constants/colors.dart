@@ -19,7 +19,7 @@ class HkColors {
 
   // Background Container colors
   static const Color lightContainer = Color(0xFFF6F6F6);
-  static Color darkContainer = HkColors.white.withOpacity(0.1);
+  static Color darkContainer = HkColors.white.withAlpha(25);
 
   // Button colors
   static const Color buttonPrimary = Color(0xFF4b68ff);

@@ -30,7 +30,7 @@ class HkCircularIcon extends StatelessWidget {
       decoration: BoxDecoration(
         color: (backgroundColor != null) ?
             backgroundColor
-            : dark ? HkColors.dark.withOpacity(0.9) : HkColors.light.withOpacity(0.9),
+            : dark ? HkColors.dark.withAlpha(230) : HkColors.light.withAlpha(230),
         borderRadius: BorderRadius.circular(100)
       ),
       child: IconButton(onPressed: onPressed, icon: Icon(icon, color: color, size: size,),),

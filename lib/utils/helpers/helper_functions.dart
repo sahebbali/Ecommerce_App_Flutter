@@ -53,7 +53,7 @@ class HkHelperFunctions {
           margin: const EdgeInsets.symmetric(horizontal: 30.0),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
-            color: HkHelperFunctions.isDarkMode(Get.context!) ? HkColors.darkerGrey.withOpacity(0.9) : HkColors.grey.withOpacity(0.9)
+            color: HkHelperFunctions.isDarkMode(Get.context!) ? HkColors.darkerGrey.withAlpha(230) : HkColors.grey.withAlpha(230)
           ),
           child: Center(child: Text(message,style: Theme.of(Get.context!).textTheme.labelLarge,),),
         ),

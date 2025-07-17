@@ -57,7 +57,7 @@ class HkProductCardHorizontal extends StatelessWidget {
                   top: 12,
                   child: HkRoundedContainer(
                     radius: HkSizes.sm,
-                    backgroundColor: HkColors.secondary.withOpacity(0.8),
+                    backgroundColor: HkColors.secondary.withAlpha(204),
                     padding: const EdgeInsets.symmetric(horizontal: HkSizes.sm, vertical: HkSizes.xs),
                     child: Text('$salePercentage%', style: Theme.of(context).textTheme.labelLarge!.apply(color: HkColors.black),),
                   ),
