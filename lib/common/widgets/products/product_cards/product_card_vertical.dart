@@ -3,9 +3,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
+// import 'package:iconsax/iconsax.dart';
 import 'package:shopping_store/common/styles/shadows.dart';
-import 'package:shopping_store/common/widgets/icons/circular_icon.dart';
+// import 'package:shopping_store/common/widgets/icons/circular_icon.dart';
 import 'package:shopping_store/common/widgets/images/rounded_image.dart';
 import 'package:shopping_store/common/widgets/products/product_price_text.dart';
 import 'package:shopping_store/common/widgets/texts/brand_title_text_with_verify_icon.dart';
@@ -18,7 +18,7 @@ import 'package:shopping_store/utils/helpers/helper_functions.dart';
 
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/enums.dart';
-import '../../../../utils/constants/image_strings.dart';
+// import '../../../../utils/constants/image_strings.dart';
 import '../../button/add_to_cart_button.dart';
 import '../../custom_shapes/containers/rounded_container.dart';
 import '../favourite_icon/favourite_icon.dart';

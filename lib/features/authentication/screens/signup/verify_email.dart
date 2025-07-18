@@ -4,10 +4,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shopping_store/common/widgets/success_screen/success_screen.dart';
+// import 'package:shopping_store/common/widgets/success_screen/success_screen.dart';
 import 'package:shopping_store/data/repositories/authentication/authentication_repository.dart';
 import 'package:shopping_store/features/authentication/controllers/signup/verify_email_controller.dart';
-import 'package:shopping_store/features/authentication/screens/login/login.dart';
+// import 'package:shopping_store/features/authentication/screens/login/login.dart';
 import 'package:shopping_store/utils/constants/image_strings.dart';
 import 'package:shopping_store/utils/constants/text_strings.dart';
 import 'package:shopping_store/utils/helpers/helper_functions.dart';

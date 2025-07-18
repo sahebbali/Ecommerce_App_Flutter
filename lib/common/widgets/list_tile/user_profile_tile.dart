@@ -7,7 +7,7 @@ import 'package:shopping_store/features/personalization/controllers/user_control
 
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/image_strings.dart';
-import '../../../utils/constants/text_strings.dart';
+// import '../../../utils/constants/text_strings.dart';
 import '../images/circular_image.dart';
 
 

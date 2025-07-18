@@ -1,9 +1,9 @@
-import 'package:shopping_store/common/widgets/texts/product_title.dart';
+// import 'package:shopping_store/common/widgets/texts/product_title.dart';
 import 'package:shopping_store/features/shop/models/banner_model.dart';
 import 'package:shopping_store/features/shop/models/brand_model.dart';
 import 'package:shopping_store/features/shop/models/product_attribute_model.dart';
 import 'package:shopping_store/features/shop/models/product_variation_model.dart';
-import 'package:shopping_store/features/shop/screens/brand/brand_products.dart';
+// import 'package:shopping_store/features/shop/screens/brand/brand_products.dart';
 import 'package:shopping_store/utils/constants/image_strings.dart';
 
 import '../features/shop/models/brand_category_model.dart';

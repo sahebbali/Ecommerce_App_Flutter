@@ -42,7 +42,7 @@ class BannerRepository extends GetxController{
 
   Future<void> uploadDummyBanners(List<BannerModel> banners) async{
     try{
-      final storage = Get.put(HkFirebaseStorageService());
+      // final storage = Get.put(HkFirebaseStorageService());
 
       for(var banner in banners){
 
