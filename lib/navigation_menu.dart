@@ -7,7 +7,7 @@ import 'package:iconsax/iconsax.dart';
 import 'features/personalization/screens/profile/profile.dart';
 import 'features/shop/screens/home/home.dart';
 import 'features/shop/screens/store/store.dart';
-// import 'features/shop/screens/wishlist/wishlist.dart';
+import 'features/shop/screens/wishlist/wishlist.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -51,7 +51,7 @@ class NavigationController extends GetxController {
   List<Widget> screens = [
     HomeScreen(),
     StoreScreen(),
-    WishlistScreen(),
+    FavouriteScreen(),
     ProfileScreen(),
   ];
 }

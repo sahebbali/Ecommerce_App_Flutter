@@ -24,6 +24,8 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   shimmer: ^3.0.0
   carousel_slider: ^5.1.1
+  readmore: ^3.0.0
+  logger: ^2.6.0
 
   # Firebase Packages
   firebase_auth: ^5.6.2
