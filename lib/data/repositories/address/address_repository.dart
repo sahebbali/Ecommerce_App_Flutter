@@ -13,21 +13,20 @@ class AddressRepository extends GetxController{
   final _db = FirebaseFirestore.instance;
 
 
-  Future<List<AddressModel>> fetchUserAddresses() async{
-    try{
-      final userId = AuthenticationRepository.instance.authUser!.uid;
-      if(userId.isEmpty) throw 'Unable to find user information. Try again in few minutes';
+Future<List<AddressModel>> fetchUserAddresses() async {
+  try {
+    final userId = AuthenticationRepository.instance.authUser!.uid;
+    if (userId.isEmpty) throw 'Unable to find user information. Try again in few minutes';
 
-      final snapshot = await _db.collection("Users").doc(userId).collection("Addresses").get();
-      final result = snapshot.docs.map((e) => AddressModel.fromDocumentSnapshot(e),).toList();
+    final snapshot = await _db.collection("Users").doc(userId).collection("Addresses").get();
+    final result = snapshot.docs.map((e) => AddressModel.fromDocumentSnapshot(e)).toList();
 
-      return result;
-
-    }catch(e){
-      // print(e);
-      // throw e;
-    }
+    return result;
+  } catch (e) {
+    throw Exception('Failed to fetch addresses: $e');
   }
+}
+
 
   /// Clear the "selected" field for all addresses
   Future<void> updateSelectedField(String addressId, bool selected) async{

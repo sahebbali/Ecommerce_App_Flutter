@@ -1,27 +1,37 @@
-import 'package:shopping_store/features/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:shopping_store/utils/constants/sizes.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:shopping_store/features/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:shopping_store/utils/helpers/helper_functions.dart';
 
-import '../../../../../common/widgets/button/elevated_button.dart';
+import '../../../../../utils/constants/colors.dart';
+import '../../../../../utils/constants/sizes.dart';
+import '../../../../../utils/device/device_utility.dart';
 
-class OnboardingNextButton extends StatelessWidget {
-  const OnboardingNextButton({super.key});
+class OnBoardingNextButton extends StatelessWidget {
+  const OnBoardingNextButton({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final controller = OnBoardingController.instance;
+
+    final dark = HkHelperFunctions.isDarkMode(context);
+    final controller = Get.put(OnBoardingController());
+
     return Positioned(
-      left: 0,
-      right: 0,
-      bottom: HkSizes.spaceBtwItems,
-      child: UElevatedButton(
-        onPressed: controller.nextPage,
-        child: Obx(
-          () =>
-              Text(controller.currentIndex.value == 2 ? 'GetStarted' : 'Next'),
-        ),
-      ),
+        bottom: HkDeviceUtils.getBottomNavigationBarHeight(),
+        right: HkSizes.defaultSpace,
+        child: ElevatedButton(
+          onPressed: () => controller.nextPage(),
+          style: ElevatedButton.styleFrom(
+            shape: const CircleBorder(),
+            backgroundColor: dark ? HkColors.primary : HkColors.black
+          ),
+          child: const Icon(Iconsax.arrow_right_3),
+        )
+
     );
   }
 }
