@@ -40,7 +40,7 @@ class HkCartItem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               HkBrandTitleWithVerifyIcon(title: cartItem.brandName ?? ''),
-              HkProductTitleText(title: cartItem.title ?? '', maxLines: 1,),
+              HkProductTitleText(title: cartItem.title , maxLines: 1,),
 
               /// Attributes
               Text.rich(
