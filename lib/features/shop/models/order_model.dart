@@ -33,7 +33,9 @@ class OrderModel{
 
   String get formattedOrderDate => HkHelperFunctions.getFormattedDate(orderDate);
 
-  String get formattedDeliveryDate => HkHelperFunctions.getFormattedDate(deliveryDate!) ?? '';
+String get formattedDeliveryDate =>
+    deliveryDate != null ? HkHelperFunctions.getFormattedDate(deliveryDate!) : '';
+
 
   String get orderStatusText => status == OrderStatus.delivered
       ? 'Delivered'
