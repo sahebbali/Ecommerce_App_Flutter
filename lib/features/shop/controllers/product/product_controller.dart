@@ -1,17 +1,17 @@
 
 
 
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shopping_store/data/dummy_data.dart';
-import 'package:shopping_store/data/repositories/brand/brand_repository.dart';
-import 'package:shopping_store/data/repositories/categories/category_repository.dart';
+// import 'package:shopping_store/data/dummy_data.dart';
+// import 'package:shopping_store/data/repositories/brand/brand_repository.dart';
+// import 'package:shopping_store/data/repositories/categories/category_repository.dart';
 import 'package:shopping_store/data/repositories/product_repository.dart';
 import 'package:shopping_store/features/shop/models/product_model.dart';
 import 'package:shopping_store/utils/helpers/helper_functions.dart';
-import 'package:shopping_store/utils/logging/logger.dart';
+// import 'package:shopping_store/utils/logging/logger.dart';
 
-import '../../../../data/repositories/banner/banner_repository.dart';
+// import '../../../../data/repositories/banner/banner_repository.dart';
 import '../../../../utils/constants/enums.dart';
 
 class ProductController extends GetxController{

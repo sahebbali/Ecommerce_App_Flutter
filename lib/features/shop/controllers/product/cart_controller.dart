@@ -2,11 +2,11 @@
 
 
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
+// import 'package:get_storage/get_storage.dart';
 import 'package:shopping_store/features/shop/controllers/product/variation_controller.dart';
 import 'package:shopping_store/features/shop/models/cart_item_model.dart';
-import 'package:shopping_store/features/shop/models/category_model.dart';
-import 'package:shopping_store/routes/routes.dart';
+// import 'package:shopping_store/features/shop/models/category_model.dart';
+// import 'package:shopping_store/routes/routes.dart';
 import 'package:shopping_store/utils/constants/enums.dart';
 import 'package:shopping_store/utils/helpers/helper_functions.dart';
 import 'package:shopping_store/utils/local_storage/storage_utility.dart';

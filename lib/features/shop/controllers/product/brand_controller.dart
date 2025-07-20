@@ -2,19 +2,19 @@
 
 
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/services.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:shopping_store/data/dummy_data.dart';
+// import 'package:shopping_store/data/dummy_data.dart';
 import 'package:shopping_store/data/repositories/product_repository.dart';
 import 'package:shopping_store/features/shop/models/brand_model.dart';
 import 'package:shopping_store/features/shop/models/product_model.dart';
 import 'package:shopping_store/utils/helpers/helper_functions.dart';
 
 import '../../../../data/repositories/brand/brand_repository.dart';
-import '../../../../utils/exceptions/firebase_exceptions.dart';
-import '../../../../utils/exceptions/format_exceptions.dart';
-import '../../../../utils/exceptions/platform_exceptions.dart';
+// import '../../../../utils/exceptions/firebase_exceptions.dart';
+// import '../../../../utils/exceptions/format_exceptions.dart';
+// import '../../../../utils/exceptions/platform_exceptions.dart';
 
 class BrandController extends GetxController{
   static BrandController get instance => Get.find();

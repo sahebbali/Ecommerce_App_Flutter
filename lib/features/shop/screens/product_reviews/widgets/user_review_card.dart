@@ -3,11 +3,11 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+// import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:readmore/readmore.dart';
 import 'package:shopping_store/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:shopping_store/common/widgets/products/ratings/product_rating_indicator.dart';
-import 'package:shopping_store/features/shop/screens/product_details/widgets/rating_and_share.dart';
+// import 'package:shopping_store/features/shop/screens/product_details/widgets/rating_and_share.dart';
 import 'package:shopping_store/utils/constants/sizes.dart';
 import 'package:shopping_store/utils/helpers/helper_functions.dart';
 

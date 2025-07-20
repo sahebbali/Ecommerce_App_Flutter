@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_store/utils/constants/sizes.dart';
 
-import '../../../../../utils/constants/text_strings.dart';
+// import '../../../../../utils/constants/text_strings.dart';
 
 class HkProfileMenu extends StatelessWidget {
   const HkProfileMenu({
